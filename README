@@ -1,0 +1,15 @@
+This implementation requires g++ (4.8+) in order to compile. 
+
+To compile you need to do is running following from command prompt:
+
+> make
+
+After compiling successfully, you can run the application as follows:
+
+> ./sudoku puzzle1.sdk silent
+
+The first argument is the puzzle data file name, puzzles are stored under data folder, and you can use any of them as input. If you input non-existing file name, it will start with completely empty board with no constraints, and solve the problem in around 30s.
+
+The second argument can be silent or verbose. For all modes, initial board, and computed final board is printed. However, when it is silent, iterations are not printed, while for verbose mode all iterations are do printed.
+
+If you do not input any arguments, application runs “puzzle1.sdk” in verbose mode.
